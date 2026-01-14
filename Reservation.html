@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Table</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="reservation-section">
+    <div class="container">
+        <h1>Reservation</h1>
+
+<p>Make your table reservations by clicking on your preffered choice.</p>
+
+        <div class="button">
+            <h2>Book a Table</h2>
+        
+                <div class="reservation-form">
+                    <div class="form-row">
+                      <div class="form-group">
+                            <label for="reservation-name">Name</label>
+                            <input type="text" id="name" placeholder="Full Name" class="form-input">
+                        </div>
+                         <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="08000000000" class="form-input" required>
+                        </div>
+                    </div>
+
+                        <div class="form-group">
+                        <div class="form-row">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" class="form-input">
+                                <option value="">Select guests</option>
+                                <option value="1">Table for 1</option>
+                                <option value="2">Table for 2</option>
+                                <option value="3">Table for 3</option>
+                                <option value="4">Table for 4</option>
+                                <option value="5">Table for 5</option>
+                                <option value="6">Table for 6+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reservation-date">Date</label>
+                            <input type="date" id="date" class="form-input">
+                        </div>
+                        </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reservation-time">Time</label>
+                            <input type="time" id="time" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-email">Email Address</label>
+                            <input type="email" id="email" placeholder="rukky@example.com" class="form-input" required>
+                        </div>
+
+                    <button class="btn-reservation" class="btn-reservation">
+                    Confirm Reservation
+                    </button>
+                    
+                    <p id="reservation-message" class="form-message"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    </section>
+</body>
+</html>
