@@ -395,24 +395,23 @@ h1::after {
 
 @media (max-width: 768px) {
     
-    /* NAVIGATION FIX - Stack menu items vertically */
+    
     .navbar {
-        flex-direction: column;  /* Stack logo and menu on top of each other */
+        flex-direction: column; 
     }
     
     .menu ul {
-        flex-direction: column;  /* Stack menu links on top of each other */
-        gap: 10px;              /* Space between links */
+        flex-direction: column;  
+        gap: 10px;             
     }
     
     .menu ul li a {
-        padding: 10px 20px;     /* Make links easier to tap */
+        padding: 10px 20px;     
     }
-    
-    /* FULL WIDTH FIX - Make all sections fit the phone screen */
+
     .contact-section {
-        width: 100% !important;      /* Take full phone width */
-        padding: 30px 15px;          /* Add padding inside */
+        width: 100% !important;     
+        padding: 30px 15px;          
     }
     
     .reservation-section {
@@ -438,31 +437,31 @@ h1::after {
         padding: 20px 15px;
     }
     
-    /* FORM FIX - Stack form fields vertically */
     .reservation-form-container {
-        flex-direction: column;  /* Stack fields on top of each other */
+        flex-direction: column;  
     }
     
     .reservation-form {
-        width: 100%;  /* Each field takes full width */
+        width: 100%; 
     }
     
     .btn-reservation {
-        width: 100%;  /* Button takes full width */
+        width: 100%; 
     }
     
-    /* TEXT FIX - Make text fit better */
+   
     .about-section p {
         width: 100% !important;
         font-size: 18px;
     }
     
     .description h1 {
-        font-size: 28px;  /* Smaller heading */
+        font-size: 30px;  
     }
     
-    /* MENU FIX - Show one menu item per row *
+   
     .menu-grid {
-        grid-template-columns: 1fr;  /* 1fr = one column */
+        grid-template-columns: 1fr;
     }
 }
+
