@@ -11,7 +11,7 @@
 
         header {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('./restuarant\ background.jpg') center/cover;
+                        url('./restuarant\ background.webp') center/cover;
             min-height: 100vh;
             color: #fff;
         }
@@ -450,4 +450,5 @@ h1::after {
     .price {
         font-size: 1.5em;
     }
+
 
