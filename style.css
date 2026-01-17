@@ -394,98 +394,75 @@ h1::after {
 }
 
 @media (max-width: 768px) {
-    header {
-        width: 100%;
-       padding: 15px;
+    
+    /* NAVIGATION FIX - Stack menu items vertically */
+    .navbar {
+        flex-direction: column;  /* Stack logo and menu on top of each other */
     }
     
-    .description {
-        margin-top: 60px;
+    .menu ul {
+        flex-direction: column;  /* Stack menu links on top of each other */
+        gap: 10px;              /* Space between links */
+    }
+    
+    .menu ul li a {
+        padding: 10px 20px;     /* Make links easier to tap */
+    }
+    
+    /* FULL WIDTH FIX - Make all sections fit the phone screen */
+    .contact-section {
+        width: 100% !important;      /* Take full phone width */
+        padding: 30px 15px;          /* Add padding inside */
+    }
+    
+    .reservation-section {
+        width: 100% !important;
+        padding: 30px 15px;
+    }
+    
+    .about-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 15px;
+    }
+    
+    .location-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 15px;
+    }
+    
+    .menu-container {
+        width: 100% !important;
+        max-width: 100% !important;
         padding: 20px 15px;
     }
     
-    .description h1 {
-        font-size: 32px;
-    }
-    
-    .description p {
-        font-size: 16px;
-    }
-    .contact-section,
-    .reservation-section,
-    .about-section,
-    .location-section {
-        width: 100%; 
-        height: auto;
-        padding: 30px 15px;
-    }
-    .contact-section h2,
-    .reservation-section h1,
-    .about-section h1,
-    .location-section h1 {
-        font-size: 28px;
-    }
+    /* FORM FIX - Stack form fields vertically */
     .reservation-form-container {
-        flex-direction: column;
+        flex-direction: column;  /* Stack fields on top of each other */
     }
+    
     .reservation-form {
-        width: 100%;
+        width: 100%;  /* Each field takes full width */
     }
     
-    /* Make the submit button full width */
     .btn-reservation {
-        width: 100%;
+        width: 100%;  /* Button takes full width */
     }
     
+    /* TEXT FIX - Make text fit better */
     .about-section p {
-        width: 100%;
+        width: 100% !important;
         font-size: 18px;
     }
     
-
-    .menu-grid {
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 480px) {
-
-    .logo-container img {
-        width: 100px;
-        height: 80px;
-    }
-    .menu ul li a {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
     .description h1 {
-        font-size: 24px;
+        font-size: 28px;  /* Smaller heading */
     }
     
-    .description p {
-        font-size: 14px;
-    }
-    .contact-section h2,
-    .reservation-section h1,
-    .about-section h1,
-    .location-section h1 {
-        font-size: 24px;
-    }
-    
-    .reservation-form {
-        font-size: 1rem;
-    }
-    
-    .btn-reservation {
-        font-size: 1rem;
-    }
-    .menu-item img {
-        height: 200px;
-    }
-    .menu-item h2 {
-        font-size: 1.2em;
-    }
-    .price {
-        font-size: 1.3em;
+    /* MENU FIX - Show one menu item per row *
+    .menu-grid {
+        grid-template-columns: 1fr;  /* 1fr = one column */
     }
 }
-
