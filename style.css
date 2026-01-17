@@ -409,9 +409,16 @@ h1::after {
         padding: 10px 20px;     
     }
 
-    .contact-section {
-        width: 100% !important;     
-        padding: 30px 15px;          
+   .contact-section p {
+        font-size: 1.2rem;
+        line-height: 1.8;        
+        margin-bottom: 15px;    
+    }
+    
+    .contact-section h2 {
+        font-size: 28px;
+        line-height: 1.4;       
+        margin-bottom: 20px;  ;          
     }
     
     .reservation-section {
@@ -437,13 +444,24 @@ h1::after {
         padding: 20px 15px;
     }
     
-    .reservation-form-container {
-        flex-direction: column;  
+    .reservation-section p {
+        font-size: 1.2rem;
+        line-height: 1.8;        
+        margin-bottom: 15px;     
     }
     
-    .reservation-form {
-        width: 100%; 
+    .reservation-section h1 {
+        font-size: 28px;
+        line-height: 1.4;       
+        margin-bottom: 20px;     
+        margin-top: 10px;        
+    
+    .reservation-section h2 {
+        font-size: 1.5rem;
+        line-height: 1.6;        
+        margin-bottom: 15px;    
     }
+
     
     .btn-reservation {
         width: 100%; 
@@ -464,4 +482,5 @@ h1::after {
         grid-template-columns: 1fr;
     }
 }
+
 
