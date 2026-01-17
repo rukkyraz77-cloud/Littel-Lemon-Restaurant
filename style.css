@@ -393,63 +393,97 @@ h1::after {
     border: 2px solid #2d8051;
 }
 
-@media screen and (max-width: 968px) {
-            .navbar {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .menu {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .menu ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 15px;
-            }
-
-            .description {
-                margin-top: 60px;
-            }
-
-            .description h1 {
-                font-size: 36px;
-            }
-
-            .description p {
-                font-size: 16px;
-            }
-        }
-
-       
-            .logo-container img {
-                width: 120px;
-                height: 96px;
-            }
-        
 @media (max-width: 768px) {
-    .menu-container {
-        padding: 20px;
+    header {
+        min-height: 80vh;
     }
-
-    h1 {
-        font-size: 2em;
+    
+    .description {
+        margin-top: 60px;
+        padding: 20px 15px;
     }
+    
+    .description h1 {
+        font-size: 32px;
+    }
+    
+    .description p {
+        font-size: 16px;
+    }
+    .contact-section,
+    .reservation-section,
+    .about-section,
+    .location-section {
+        width: 100%; 
+        height: auto;
+        padding: 30px 15px;
+    }
+    .contact-section h2,
+    .reservation-section h1,
+    .about-section h1,
+    .location-section h1 {
+        font-size: 28px;
+    }
+    .reservation-form-container {
+        flex-direction: column;
+    }
+    .reservation-form {
+        width: 100%;
+    }
+    
+    /* Make the submit button full width */
+    .btn-reservation {
+        width: 100%;
+    }
+    
+    .about-section p {
+        width: 100%;
+        font-size: 18px;
+    }
+    
 
     .menu-grid {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 480px) {
 
+    .logo-container img {
+        width: 100px;
+        height: 80px;
+    }
+    .menu ul li a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .description h1 {
+        font-size: 24px;
+    }
+    
+    .description p {
+        font-size: 14px;
+    }
+    .contact-section h2,
+    .reservation-section h1,
+    .about-section h1,
+    .location-section h1 {
+        font-size: 24px;
+    }
+    
+    .reservation-form {
+        font-size: 1rem;
+    }
+    
+    .btn-reservation {
+        font-size: 1rem;
+    }
+    .menu-item img {
+        height: 200px;
+    }
     .menu-item h2 {
+        font-size: 1.2em;
+    }
+    .price {
         font-size: 1.3em;
     }
-
-    .price {
-        font-size: 1.5em;
-    }
-
-
-
+}
