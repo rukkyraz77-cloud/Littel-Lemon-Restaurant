@@ -390,97 +390,103 @@ h1::after {
     padding: 8px 20px;
     background: #b5d8b2;
     border-radius: 25px;
-    border: 2px solid #2d8051;
-}
-
-@media (max-width: 768px) {
+    border: 2px solid #2d80
     
-    
-    .navbar {
-        flex-direction: column; 
+    .description p {
+        font-size: 1rem;
+        padding: 0 20px;
     }
     
-    .menu ul {
-        flex-direction: column;  
-        gap: 10px;             
+    /* Make menu grid single column */
+    .menu-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .menu-item {
+        margin-bottom: 20px;
+    }
+    
+    /* Make images responsive */
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .description h1 {
+        font-size: 1.5rem;
+    }
+    
+    .description p {
+        font-size: 0.9rem;
     }
     
     .menu ul li a {
-        padding: 10px 20px;     
+        font-size: 0.9rem;
     }
-
-   .contact-section p {
+    
+    .price {
         font-size: 1.2rem;
-        line-height: 1.8;        
-        margin-bottom: 15px;    
     }
-    
-    .contact-section h2 {
-        font-size: 28px;
-        line-height: 1.4;       
-        margin-bottom: 20px;  ;          
-    }
-    
-    .reservation-section {
-        width: 100% !important;
-        padding: 30px 15px;
-    }
-    
-    .about-section {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 30px 15px;
-    }
-    
-    .location-section {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 30px 15px;
-    }
-    
-    .menu-container {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 20px 15px;
-    }
-    
-    .reservation-section p {
-        font-size: 1.2rem;
-        line-height: 1.8;        
-        margin-bottom: 15px;     
-    }
-    
-    .reservation-section h1 {
-        font-size: 28px;
-        line-height: 1.4;       
-        margin-bottom: 20px;     
-        margin-top: 10px;        
-    
-    .reservation-section h2 {
-        font-size: 1.5rem;
-        line-height: 1.6;        
-        margin-bottom: 15px;    
-    }
+}
 
+.img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+@media screen and (max-width: 768px) {
     
-    .btn-reservation {
-        width: 100%; 
+   
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .menu ul li {
+        margin: 10px 0;
+    }
+    
+    
+    .logo-container img {
+        max-width: 150px;
     }
     
    
-    .about-section p {
-        width: 100% !important;
-        font-size: 18px;
+    .description h1 {
+        font-size: 1.8rem;
     }
     
-    .description h1 {
-        font-size: 30px;  
+    .description p {
+        font-size: 1rem;
+        padding: 0 20px;
     }
     
    
     .menu-grid {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
-}
+    
+    .menu-item {
+        margin-bottom: 20px;
+    }
+    
+   
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
 
 
