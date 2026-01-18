@@ -404,8 +404,6 @@ header {
     background: #b5d8b2;
     border-radius: 25px;
 }
-
-/* TABLET STYLES - 768px and below */
 @media screen and (max-width: 768px) {
     
     .navbar {
@@ -489,8 +487,6 @@ header {
         max-width: 100%;
     }
 }
-
-/* MOBILE STYLES - 480px and below */
 @media screen and (max-width: 480px) {
     
     .navbar {
@@ -578,3 +574,4 @@ header {
         font-size: 1rem;
     }
 }
+
